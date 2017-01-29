@@ -1,0 +1,81 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
+#sidebar .sidebar-logo-img {
+  border: 0;
+}
+#sidebar .sidebar-logo {
+  margin-top: 40px;
+  vertical-align: center;
+  text-align: center;
+}
+#sidebar {
+  background-color: #2a3542;
+  width: 280px;
+  height: 100%;
+  float: left;
+  position: fixed;
+}
+.nav {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+.nav a {
+  text-decoration: none;
+  color: #aeb2b7;
+  font-size: 130%;
+}
+.nav li {
+  color: white;
+  width: 260px;
+  height: 20px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 4px;
+  transition: background 0.2s;
+}
+.nav li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+#container {
+  margin-left: 280px;
+  height: 7800px;
+  display: block;
+}
+#container .main-header {
+  padding-left: 90px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  text-align: left;
+  background-color: #33d6ff;
+  color: white;
+}
+#container .main-header p {
+  font-size: 130%;
+}
+#container .main-header h1 {
+  font-size: 250%;
+  font-style: normal;
+}
+#container .main-header a {
+  text-decoration: underline;
+  color: white;
+}
+badge {
+  font-size: 0.3em;
+  border-radius: 15%;
+  padding: 2px;
+}
+.green {
+  background-color: green;
+}
