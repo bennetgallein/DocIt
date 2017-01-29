@@ -4,4 +4,4 @@ DocIt is a free to use HTML Website Template for Developers to documentate their
 
 Please post suggestions under the "Issues" Tab.
 
-Check out my Twitter: @ScorpiaDev. 
+Check out my Twitter: @ScorpiaDev.
