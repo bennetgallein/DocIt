@@ -79,6 +79,18 @@ badge {
 .green {
   background-color: green;
 }
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+section {
+  width: 80%;
+}
 .documentation {
   padding-top: 50px;
   padding-left: 90px;
