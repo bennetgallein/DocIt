@@ -51,7 +51,7 @@ body {
   margin-left: 280px;
   display: block;
 }
-#container .main-header {
+#container #main-header {
   padding-left: 90px;
   padding-top: 80px;
   padding-bottom: 100px;
@@ -59,14 +59,14 @@ body {
   background-color: #33d6ff;
   color: white;
 }
-#container .main-header p {
+#container #main-header p {
   font-size: 130%;
 }
-#container .main-header h1 {
+#container #main-header h1 {
   font-size: 250%;
   font-style: normal;
 }
-#container .main-header a {
+#container #main-header a {
   text-decoration: underline;
   color: white;
 }
