@@ -4,6 +4,7 @@
 + Sharing links
 + Edit log
 + li as clickable area
++ bottom right corner: to top button
 
 DONE + Graph Integration
 DONE + Anker Links
