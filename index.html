@@ -5,7 +5,8 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <link href="css/code.css" rel="stylesheet">
   <script src="js/script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
@@ -17,9 +18,9 @@
       <img class="sidebar-logo-img" src="img/logo-sidebar.png">
     </div>
     <ul class="nav">
-      <li><a href="#main-header">Top</a></li>
-      <li><a href="#code">Code</a></li>
-      <li><a href="#charts">Charts</a></li>
+      <li><a class="scroll" href="#main-header">Top</a></li>
+      <li><a class="scroll" href="#code">Code</a></li>
+      <li><a class="scroll" href="#charts">Charts</a></li>
     </ul>
   </div>
   <div id="container">
@@ -33,7 +34,7 @@
       <section id="code">
         <h2><a href="#first">First Paragraph</a></h2>
         <p> Here is the basic skelleton of this project and how to build up your documentation </p>
-        <pre class="prettyprint">
+        <pre class="prettyprint linenums">
 var lastCalledWithfunction
 callback(e){
   lastCalledWith = e
