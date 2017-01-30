@@ -1,2 +1,9 @@
++ Nested-navs
++ Image integration
++ Downloadable pdf-files with the documentations content
++ Sharing links
++ Edit log
++ li as clickable area
+
 DONE + Graph Integration
 DONE + Anker Links
