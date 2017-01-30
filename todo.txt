@@ -1,2 +1,2 @@
-+ Graph Integration
-+ Anker Links
+DONE + Graph Integration
+DONE + Anker Links

@@ -4,7 +4,12 @@
   <title> Documentation Template </title>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 </head>
 <body>
   <div id="sidebar">
@@ -12,8 +17,9 @@
       <img class="sidebar-logo-img" src="img/logo-sidebar.png">
     </div>
     <ul class="nav">
-      <li><a href="#first">First</a></li>
-      <li><a href="#second">Second</a></li>
+      <li><a href=".main-header">Top</a></li>
+      <li><a href="#code">Code</a></li>
+      <li><a href="#charts">Charts</a></li>
     </ul>
   </div>
   <div id="container">
@@ -24,14 +30,87 @@
     </div>
     <div class="documentation">
       <p class="notice"> Here you can write what you want.. Nothing special but maybe some kind of important </p>
-      <section id="title">
+      <section id="code">
         <h2><a href="#first">First Paragraph</a></h2>
         <p> Here is the basic skelleton of this project and how to build up your documentation </p>
         <pre class="prettyprint">
-var help = new Help();
+var lastCalledWithfunction
+callback(e){
+  lastCalledWith = e
+}
+obj.bind('someevent', callback)
+obj.doSomethingThatShouldTriggerEvent()
+expect(lastCalledWith.type).toBe('someevent') // check that callback was called
 </pre>
+      </section>
+      <section id="charts">
+        <h2><a href="#second">Graphs</a></h2>
+        <p> You can use the graphs by Morris.js </p>
+        <br>
+        <p> This is a Line-Chart! </p>
+        <div id="lineChart" style="height=200px; margin-bottom: 50px;"></div>
+        <p> This is a Area-Chart!</p>
+        <div id="areaChart" style="height=200px; margin-bottom: 50px;"></div>
+        <p> This is a Bar-Chart!</p>
+        <div id="barChart" style="height=200px; margin-bottom: 50px;"></div>
+        <p> This is a Donut-Chart </p>
+        <div id="donutChart" style="height=50px; margin-bottom: 50px;"></div
       </section>
     </div>
   </div>
+  <script>
+  new Morris.Line({
+    element: 'lineChart',
+    data: [
+      { year: '2008', value: 20 },
+      { year: '2009', value: 10 },
+      { year: '2010', value: 5 },
+      { year: '2011', value: 5 },
+      { year: '2012', value: 20 }
+    ],
+    xkey: 'year',
+    ykeys: ['value'],
+    labels: ['Value']
+  });
+  Morris.Area({
+    element: 'areaChart',
+    data: [
+      { y: '2006', a: 100, b: 90 },
+      { y: '2007', a: 75,  b: 65 },
+      { y: '2008', a: 50,  b: 40 },
+      { y: '2009', a: 75,  b: 65 },
+      { y: '2010', a: 50,  b: 40 },
+      { y: '2011', a: 75,  b: 65 },
+      { y: '2012', a: 100, b: 90 }
+    ],
+    xkey: 'y',
+    ykeys: ['a', 'b'],
+    labels: ['Series A', 'Series B']
+  });
+  Morris.Bar({
+    element: 'barChart',
+    data: [
+      { y: '2006', a: 100, b: 90 },
+      { y: '2007', a: 75,  b: 65 },
+      { y: '2008', a: 50,  b: 40 },
+      { y: '2009', a: 75,  b: 65 },
+      { y: '2010', a: 50,  b: 40 },
+      { y: '2011', a: 75,  b: 65 },
+      { y: '2012', a: 100, b: 90 }
+    ],
+    xkey: 'y',
+    ykeys: ['a', 'b'],
+    labels: ['Series A', 'Series B']
+  });
+  Morris.Donut({
+    element: 'donutChart',
+    resize: true,
+    data: [
+      {label: "Download Sales", value: 12},
+      {label: "In-Store Sales", value: 30},
+      {label: "Mail-Order Sales", value: 20}
+    ]
+  });
+  </script>
 </body>
 </html>
